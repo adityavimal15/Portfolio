@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code_Alpha_Portfolio_1</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="shortcut icon" href="png-transparent-programmer-computer-icons-ninja-saga-computer-software-ninja-computer-sticker-cartoon-thumbnail.png"
+        type="image/x-icon">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            background-image: url(Picsart_23-07-11_16-13-39-900.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+
+        .menu {
+            background-size: 100%;
+            font-family: sans-serif;
+            background-color: black;
+        }
+        .menu img{
+            box-shadow: 0 0 15px black;
+        }
+        .menu img:hover{
+            transform: scale(1.3);
+        }
+
+        .menu button {
+            background-color: rgb(248, 244, 244);
+            color: rgb(3, 3, 3);
+            width: 90px;
+            height: 60px;
+            font-size: 1.4em;
+            font: bold;
+            border: 2px dotted black;
+            margin-left: 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: rgb(3, 3, 3);
+        }
+
+        .menu-bar {
+            display: none;
+            border: 2px dotted black;
+        }
+
+        .menu-bar ul {
+            list-style: none;
+        }
+
+        .menu ul li:hover .menu-bar {
+            display: block;
+            position: absolute;
+            background-color: rgb(250, 247, 247);
+            color: rgb(2, 2, 2);
+            margin-left: 15px;
+            list-style: none;
+        }
+
+        .menu ul li:hover .menu-bar ul {
+            display: block;
+            margin: 10px;
+        }
+
+        .menu ul li:hover .menu-bar ul li {
+            width: 150px;
+            padding: 10px;
+            border-radius: 1px dotted rgb(5, 5, 5);
+            background: transparent;
+            border-radius: 0;
+            text-align: left;
+        }
+
+        .menu ul li:hover .menu-ber ul li:last-child {
+            border-bottom: none;
+        }
+
+        .menu ul li:hover .menu-bar ul li:hover {
+            background-color: rgb(2, 2, 2);
+        }
+
+        .menu ul li:hover .menu-bar ul li a:hover {
+            background-color: rgb(5, 5, 5);
+            color: rgb(252, 251, 251);
+        }
+
+        .home {
+            margin-top: 0%;
+            width: 800px;
+        }
+
+        .home p {
+            font: italic small-caps bold 14px/2 cursive;
+            font-size: 1.2em;
+            transform: translate(870px, 280px);
+            animation: move 4s;
+        }
+
+        .home p b {
+            color: red;
+            font-size: 1.4em;
+            animation: move 4s;
+        }
+
+        .home p button {
+            background-color: blue;
+            color: white;
+            size: 20px;
+            border: 3px solid blue;
+            animation: move 4s;
+        }
+
+        .home p button:hover {
+            background-color: white;
+            color: blue;
+            border: 3px solid blue;
+        }
+
+        #about {
+            background-color: black;
+            margin-top: 8%;
+            border: 3px solid white;
+            display: block;
+        }
+
+        #about .data {
+            border: 3px solid white;
+            margin-top: 3%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            margin-right: 3%;
+            display: block;
+            transform: translate(0px, 400px);
+            
+        }
+
+
+        #about nav {
+            transform: translate(0px, -380px);
+            text-align: right;
+            margin-right: 5%;
+        }
+
+        #about nav p {
+            color: white;
+            transform: translate(-50px, -200px);
+            font-size: 4em;
+            font-family: cursive;
+            background-color:orange;
+            width: 1840px;
+            border: 2px solid white;
+        }
+
+        #about nav b {
+            color: yellow;
+            font-size: 1.5em;
+            animation: movein 14s;
+        }
+
+        #about nav b i {
+            color: red;
+            font-size: 2em;
+            animation: movein 1s4s;
+        }
+
+        #about p {
+            color: white;
+            font-size: 1em;
+        }
+
+        #about .matric{
+            display: inline-block;
+            margin-left: 6%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 5%;
+            transform: translate(0px,-200px);
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+
+        #about .inter{
+            display: inline-block;
+            margin-left: 6%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 5%;
+            transform: translate(0px,-200px);
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+
+        #about .btech{
+            display: inline-block;
+            margin-left: 5%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 5%;
+            transform: translate(0px,-200px);
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+        
+        #about .matric p{
+            color:white;
+            text-align: centre;
+            size: 1.5em;
+            margin-left: 3%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 0%;
+            transform: translate(0px,-70px);
+            background-color: blue;
+            text-align: center;
+            width: 380px;
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+        #about .inter p{
+            color:rgb(255, 255, 255);
+            text-align: centre;
+            size: 1.5em;
+            margin-left: 5%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 0%;
+            transform: translate(0px,-70px);
+            text-align: center;
+            width: 370px;
+            background-color: blue;
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+        #about .btech p{
+            color:rgb(255, 255, 255);
+            text-align: centre;
+            size: 1.5em;
+            margin-left: 6%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-right: 0%;
+            transform: translate(0px,-70px);
+            text-align: center;
+            width: 350px;
+            background-color: blue;
+            border: 2px dotted blue;
+            box-shadow: 0 0 15px blue;
+        }
+        #about .matric a,.inter  a,.btech a{
+            text-decoration: none;
+            color: blue;
+        }
+        #about .matric:hover{
+            border: 2px dotted orange;
+            box-shadow: 0 0 15px orange;
+        }
+        #about .inter:hover{
+            border: 2px dotted orange;
+            box-shadow: 0 0 15px orange;
+        }
+        #about .btech:hover{
+            border: 2px dotted orange;
+            box-shadow:0 0 15px orange;
+        }
+        #about .matric p:hover{
+            border: 2px dotted orange;
+            box-shadow: 0 0 15px orange;
+            background-color: orange;
+            color: black;
+        }
+        #about .inter p:hover{
+            border: 2px dotted orange;
+            box-shadow: 0 0 15px orange;
+            background-color: orange;
+            color: black;
+        }
+        #about .btech p:hover{
+            border: 2px dotted orange;
+            box-shadow: 0 0 15px orange;
+            background-color: orange;
+            color: black;
+        }
+        #projects {
+            background-color: black;
+        }
+
+        #projects nav {
+            color: white;
+            text-align: center;
+            font-size: 4em;
+            font: cursive;
+            background-color:orange;
+        }
+
+        #projects .camera {
+            display: inline-block;
+            margin-left: 5%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted green;
+            box-shadow: 0 0 15px green;
+        }
+
+        #projects .calculator {
+            display: inline-block;
+            margin-left: 5%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted yellow;
+            box-shadow: 0 0 15px yellow;
+        }
+
+        #projects .network {
+            display: inline-block;
+            margin-left: 5%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted skyblue;
+            box-shadow: 0 0 15px skyblue;
+        }
+
+        #projects .camera:hover  {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15,132);
+        }
+
+        #projects .calculator:hover {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15, 132);
+        }
+
+        #projects .network:hover {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15, 132);
+        }
+
+        #projects .camerabrief {
+            display: inline-block;
+            color: white;
+            margin-left: 6%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted green;
+            box-shadow: 0 0 15px green;
+            transform: translate(0px,-70px);
+        }
+
+        #projects .calculatorbrief {
+            display: inline-block;
+            color: white;
+            margin-left: 7.3%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted yellow;
+            box-shadow: 0 0 15px yellow;
+            transform: translate(0px,-70px);
+        }
+
+        #projects .networkbrief {
+            display: inline-block;
+            color: white;
+            margin-left: 8.1%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+            border: 3px dotted skyblue;
+            box-shadow: 0 0 15px skyblue;
+            transform: translate(0px,-70px);
+        }
+        #projects .camerabrief:hover  {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15, 132);
+            background-color: rgb(216,15,132);
+        }
+
+        #projects .calculatorbrief:hover {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15, 132);
+            background-color: rgb(216,15,132);
+        }
+
+        #projects .networkbrief:hover {
+            border: 3px dotted rgb(216, 15, 132);
+            box-shadow: 0 0 15px rgb(216, 15, 132);
+            background-color: rgb(216,15,132);
+        }
+        #contact{
+            background-color: black;
+            height: 1800px;
+        }
+        #contact nav{
+            background-color:orange;
+            color: white;
+            text-align: center;
+            font-size: 4em;
+            font: cursive;
+            transform: translate(0px,78px);
+            border: 2px solid white;
+        }
+
+        #contact ul{
+            list-style: none;
+            color: white;
+            transform: translate(0px,100px);
+            background-color: rgb(0, 0, 0);
+        }
+        #contact ul li{
+            margin-left: 5%;
+            margin-top: 5%;
+            font-size: 1.2em;
+            margin-bottom: 2%;
+        }
+        #contact ul li .icon{
+            background-color: rgb(68, 63, 63);
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 60px;
+        }
+        #contact ul li .icon .ico{
+            background-color: rgb(68,63,63);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            text-align: center;
+            transform: translate(5px,5px);
+        }
+       #contact ul li .icon .ico i{
+            font-size: 40px;
+            border-radius: 50%;
+            position: relative;
+            text-align: center;
+            transform: translateY(10px);
+        }
+        #contact ul li .icon:hover{
+            background-color: orange;
+            box-shadow: 0 0 15px orange;
+            text-shadow: 0 0 15px orange;
+            color:orange;
+        }
+        #contact ul li .icon .ico:hover {
+            background-color: rgb(68,63,63);
+        }
+        #contact ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        @keyframes move {
+            0%{
+                transform: translate(820px,280px);
+                opacity: 60%;
+            }
+            50%{
+                transform: translate(845px,280px);
+                opacity: 80%;
+            }
+            100%{
+                transform: translate(870px,280px);
+                opacity: 100%;
+            }
+           
+        }
+        @keyframes movein {
+                0%{
+                    transform:translate(50px);
+                    color: white;
+                    opacity: 30%;
+                }
+                100%{
+                    transform: translate(0px);
+                    opacity: 100%;
+                }
+        }    
+
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#"><button><b>| | |</b></button></a>
+                <div class="menu-bar">
+                    <ul>
+                        <li><a href="#menu">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="home">
+        <p><b>ADITYA VIMAL</b><br>
+            I am a frontend developer, a digital artist of <br>the web,
+            Crafting beautiful interfaces, <br>bringing ideas to ebb.
+            With HTML, <br>CSS, and JavaScript as my tools, <br>
+            I design and code, creating digital <br>jewels... <a href="#about"><button>more</button></a></p>
+    </div>
+    <a href="#contact"><img src="Picsart_23-07-11_16-52-48-021.png " width="400px"></a>
+    <div id="about">
+        <div class="data">
+           <img src="IMG_20230709_155721.jpg" width="700px">
+        </div>
+        <nav>
+            <p><i>ABOUT ME
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </i>
+            </p>
+            <b><i>Hello, everyone!
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i>
+                <br>
+                My name is Aditya Vimal, and I am delighted to have the opportunity to introduce myself. <br> I hail
+                from the beautiful town of Rupnagar in Punjab,
+                India.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+
+                From a young age, I have been passionate about technology and its potential to shape the &nbsp;<br>world
+                around us. This fascination led me to pursue a career in web development, where &nbsp;&nbsp;&nbsp;<br>I
+                could combine
+                my creative and logical thinking skills to bring innovative ideasto
+                life.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                Before a front end developer begins coding, they typically use graphic design tools
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> to create a
+                prototype of their website, which lets them test and experiment with
+                the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>user interface before working
+                out the actual code.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                <br>
+
+                Depending on the team size team and project scope, the process might be as simple as
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>using a pencil and
+                paper, or it might require graphics editing programs like Sketch or
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>Photoshop, prototyping tools like
+                Balsmiq Mockups or more advanced graphical editing &nbsp;<br>tools such as Figma or
+                Illustrator.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                A code editing tool is simply the program a front end developer chooses to use to
+                write&nbsp;&nbsp;&nbsp;&nbsp;<br> code for their website. Some developers prefer to use a lightweight
+                editorlike Notepad,&nbsp;&nbsp;&nbsp;&nbsp;<br> while others opt for something more feature-rich like
+                Visual Studio or
+                Eclipse.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+
+                Before you decide on a code editor, try out a fewdifferent ones to see which oneyou
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>work with best.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+            </b>
+
+        </nav>
+        <div class="matric"><a href="https://www.facebook.com/RTPschoolRopar/">
+            <img src="Picsart_23-07-12_10-42-55-556.png" width="400px"><p>MATRICULATION</p>
+            </a>
+        </div>
+        <div class="inter"><a href="https://davschoolropar.in/">
+            <img src="Picsart_23-07-12_10-40-09-927.png" width="400px"><P>INTERMEDIATE</P>
+            </a>
+        </div>
+        <div class="btech"><a href="https://amritsar.ptu.ac.in/">
+            <img src="Picsart_23-07-12_10-39-02-421.png" width="400px"><P>PURSUING B.TECH</P>
+            </a>
+        </div>
+    </div>
+    <div id="projects">
+        <nav><i>PROJECTS</i></nav>
+        <div class="camera">
+            <img src="Picsart_23-07-09_18-30-21-217.png" width="400px">
+        </div>
+        <div class="calculator">
+            <img src="Picsart_23-07-09_18-30-49-977.png" width="400px">
+        </div>
+        <div class="network">
+            <img src="Picsart_23-07-09_18-31-14-627.png" width="400px">
+        </div>
+        <div class="camerabrief">IP Webcam turns your phone into a network camera with <br> multiple viewing
+            your camera on any platform with <br>VLC player or web browser.</div>
+        <div class="calculatorbrief">A simple calculator application using HTML, CSS, <br> Javascript. Check out  the Django
+            project folder to <br> view the files created  for the calculator app using Dja...</div>
+        <div class="networkbrief">Network applications are computer applications that <br>in a computer network.
+            These applications  talk to <br>each other by plugging ...</div>
+    </div>
+    <div id="contact">
+        <nav><i>CONTACT DETAILS</i></nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/aditya-vimal-2a2911234/"><div class="icon"><div class="ico"><i class="fa-brands fa-linkedin"></i></div></div>https://www.linkedin.com/in/aditya-vimal-2a2911234/</a></li>
+            <li><a href="https://github.com/adityavimal15"><div class="icon"><div class="ico"><i class="fa-brands fa-github"></i></div></div>https://github.com/adityavimal15</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100023449277609"><div class="icon"><div class="ico"><i class="fa-brands fa-facebook"></i></div></div>https://www.facebook.com/profile.php?id=100023449277609</a></li>
+            <li><a href="https://www.instagram.com/i_adityavimal15980/"><div class="icon"><div class="ico"><i class="fa-brands fa-instagram"></i></div></div>https://www.instagram.com/i_adityavimal15980/</a></li>
+            <li><a href="https://www.instagram.com/i_adityavimal15980/"><div class="icon"><div class="ico"><i class="fa-solid fa-envelope"></i></div></div>aditayavimal15@gmail.com</a></li>
+            <li><div class="icon"><div class="ico"><i class="fa-brands fa-whatsapp"></i></div></div>+9162804*****</li>
+            <li><div class="icon"><div class="ico"><i class="fa-solid fa-phone"></i></div></div>+9198151*****</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
